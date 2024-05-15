@@ -1,84 +1,36 @@
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>q13x</title>
-    <meta name="title" content="q13x">
-    <meta name="description"
-        content="Hi, I'm q13x (WorldEditAxe), and welcome to my little corner of the internet! I do lots of random things.">
-    <meta name="keywords" content="q13x, profile, website, portfolio">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/ui.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
-    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-stars@3/tsparticles.preset.stars.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- change this to use the normal script.js when programming/debugging instead -->
-    <script src="script.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chro64</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
 </head>
-
-<body id="background" class="background-container">
-    <div>
-        <div class="main hidden-effect hidden">
-            <div class="container">
-                <div class="hi">
-                    Hi, I'm</div>
-                <div class="display-flex">
-                    <img src="images/q13x.png" class="pfp">
-                    <div class="username">q13x 👋</div>
-                </div>
-            </div>
-            <div class="box">
-                I make Discord bots and do random things.
-                <ul>
-                    <li>💻 I'm a backend developer that uses TypeScript and Node.js.</li>
-                    <li>🔌 I wrote <a href="https://github.com/WorldEditAxe/eaglerproxy" class="link"
-                            target="_blank">eaglerproxy</a>, an Eaglercraft server allowing cross-platform Vanilla
-                        gameplay.</li>
-                    <li>🐦 pauly :D</li>
-                </ul>
-                <form action="https://discord.com/users/695353371535736944" target="_blank">
-                    <input type="submit" class="contact-button" value="Contact Me" />
-                </form>
-                <hr>
-                <div class="footer">
-                    <div class="links-title">Links</div>
-                    <div class="link-box">
-                        <a href="https://discord.com/users/695353371535736944" class="link" target="_blank">
-                            <img src="icons/discord.svg" class="link-item-ds" draggable="false">
-                        </a>
-                        <a href="https://github.com/WorldEditAxe" class="link" target="_blank">
-                            <img src="icons/github.svg" class="link-item-gh" draggable="false">
-                        </a>
-                        <a href="https://reading.q13x.com/" class="link" target="_blank">
-                            <img src="icons/minecraft.svg" class="link-item-mc" draggable="false">
-                        </a>
-                        <a href="https://writing.q13x.com" class="link" target="_blank">
-                            <img src="icons/globe.svg" class="link-item-gl" draggable="false">
-                        </a>
-                    </div>
-                </div>
-                <div style="font-size: 13px; text-align: center; display: flex; justify-content: center; gap: 5px;">
-                    <span>pauly da birb 🦜</span> &#x2022;
-                    <div class="randomized-nostalgia-link link">click me?</div>
-                </div>
-            </div>
-        </div>
-        <div id="time-sync" class="toggle-time-sync-button">[disable time sync]</div>
+<body>
+    <div id="enter-screen" style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:black; display:flex; justify-content:center; align-items:center;">
+        <span id="enter-button" style="color:white; font-size:2em;">Click to Enter</span>
     </div>
+    
+    <audio loop="" preload="auto" id="audio" >
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <video  muted loop id="backgroundVideo" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;; opacity: 0.1;">
+        <source src="0131.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <header>
+            <h1>chro64</h1>
+        </header>
+        <div id="typewriter"></div>
+        <div class="buttons">
+            <a href="https://discord.com/users/1008089287830540410">
+                <button id="button1"><img src="discord.png" alt="Button 1"></button>
+            </a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-<script>
-    twemoji.parse(document.body);
-</script>
-
 </html>
