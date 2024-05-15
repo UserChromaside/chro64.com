@@ -1,0 +1,128 @@
+.box {
+    background-color: rgb(156, 115, 0);
+    box-shadow: 20px 20px 0px rgb(94, 69, 0), 0px 0px 50px rgb(255, 213, 88), 20px 20px 50px rgb(169, 141, 58);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 320px;
+    position: relative;
+}
+
+.links-title {
+    font-weight: 700;
+}
+
+.link-box {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link-item-ds {
+    position: relative;
+    bottom: 3px;
+    width: 46px;
+    height: 46px;
+    transition: transform .2s, box-shadow .7s;
+    opacity: 1;
+}
+
+.link-item-gh {
+    width: 40px;
+    height: 40px;
+    transition: transform .2s, box-shadow .7s;
+    opacity: 1;
+}
+
+.link-item-gl {
+    position: relative;
+    bottom: 0px;
+    width: 40px;
+    height: 40px;
+    transition: transform .2s, box-shadow .7s;
+    opacity: 1;
+}
+
+.link-item-mc {
+    position: relative;
+    bottom: -1px;
+    width: 38px;
+    height: 38px;
+    transition: transform .2s, box-shadow .7s;
+    opacity: 1;
+}
+
+.link-item-ds:hover, .link-item-gh:hover, .link-item-gl:hover, .link-item-mc:hover {
+    transform: scale(1.25);
+}
+
+.link-item-ds:active, .link-item-gh:active, .link-item-gl:active, .link-item-mc:active {
+    transform: scale(1.1);
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+.link {
+    text-decoration: underline;
+    color: rgb(157, 203, 255);
+    transition: text-shadow 0.25s ease;
+    cursor: pointer;
+
+    /* height: 42px; */
+    /* width: 42px; */
+}
+
+.link:hover {
+    text-shadow: 0 0 7px rgb(157, 203, 255);
+}
+
+.link:visited {
+    text-decoration: underline;
+    color: rgb(101, 173, 255);
+}
+
+.contact-button {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 90%;
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 177, 26);
+    border: 4px solid rgb(207, 159, 25);
+    box-shadow: 10px 10px 0px rgb(116, 89, 13);
+    transition: box-shadow 0.1s ease;
+    padding: 7px;
+    margin: auto;
+    margin-bottom: 17px;
+    /* margin-right: 0px; */
+    display: block;
+}
+.contact-button:hover {
+    background-color: rgb(216, 165, 26);
+    border: 4px solid rgb(184, 140, 21);
+    box-shadow: 14px 14px 0px rgb(116, 89, 13);
+}
+
+.contact-button:active {
+    background-color: rgb(179, 137, 22);
+    border: 4px solid rgb(156, 120, 19);
+    box-shadow: 12px 12px 0px rgb(116, 89, 13);
+}
