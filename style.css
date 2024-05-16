@@ -42,11 +42,6 @@ body{
     animation: bgpan 180s linear infinite;
 }
 
-font{
-    font-family: dos;
-    font-size: 16px;
-    text-shadow: 2px 1px 1px #000000;
-}
 
 table {
     max-width: 100%;
