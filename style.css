@@ -1,0 +1,56 @@
+@font-face {
+    font-family: dos;
+    src: url(/inc/fonts/FSEX300.ttf);
+}
+
+@keyframes bgpan {
+    0%{background-position: 0% 0%;}
+    100%{background-position: 100% 100%;}
+}
+
+#taskbar {   
+    background: linear-gradient(to top, #000000 45%, #00473c 50%, #006352 100%);
+}
+
+a {
+    color: #00ffe7;
+    transition: .4s;
+}
+
+a:hover {
+    font-size: 17px;
+    color: #ffffff;
+    text-shadow: 0px 0px 12px #d9fcff;
+    transition: .4s;
+}
+
+a:link:active {
+    text-shadow: 0px 0px 24px #ffffff;
+    color: #ffffff;
+}
+
+hr {
+    color: #00ffe7;
+    transition: .4s;
+}
+
+hr:hover {
+    color: #ffffff;
+    transition: .2s;
+}
+
+body{
+    background: radial-gradient(#000000, #00564d);
+    background-image: url(img/bg/star.jpeg);
+    animation: bgpan 180s linear infinite;
+}
+
+font{
+    font-family: dos;
+    font-size: 16px;
+    text-shadow: 2px 1px 1px #000000;
+}
+
+table {
+    max-width: 100%;
+}
