@@ -10,7 +10,7 @@
 }
 
 a {
-    color: #00ffe7;
+    color: #24D6F6;
     transition: .4s;
 }
 
@@ -36,8 +36,8 @@ hr:hover {
 }
 
 body{
-    background: radial-gradient(#000000, #00564d);
-    background-image: url(img/bg/star.jpeg);
+    background: radial-gradient(#000000, #24D6F6);
+    background-image: url(background.png);
     animation: bgpan 180s linear infinite;
 }
 
