@@ -129,7 +129,7 @@ hr {
     column-gap: 32px;
 }
 
-.toggle-time-sync-button {
+
     font-family: 'Fira Code';
     /* text-decoration: underline; */
     cursor: pointer;
@@ -145,14 +145,7 @@ hr {
     right: 0%;
 }
 
-.toggle-time-sync-button:hover {
-    text-decoration: underline;
-    color: rgb(188, 188, 188);
-}
 
-.toggle-time-sync-button:active {
-    color: rgb(132, 132, 132);
-}
 
 .hidden-effect {
     transform: scale(2);
