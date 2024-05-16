@@ -1,7 +1,4 @@
-@font-face {
-    font-family: dos;
-    src: url(/inc/fonts/FSEX300.ttf);
-}
+
 
 @keyframes bgpan {
     0%{background-position: 0% 0%;}
