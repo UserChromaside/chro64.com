@@ -6,7 +6,7 @@
 	<meta property="og:locale" content="en_US">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comment</title>
-	<link rel="stylesheet" href="/main.css">
+	<link rel="stylesheet" href="comment.css">
 	</head>
 	
 	<body bgcolor="#ffffff" text="#000000">
