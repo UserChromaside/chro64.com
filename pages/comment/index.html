@@ -27,7 +27,7 @@
             commentsContainer.innerHTML = '';
 
             // Fetch comments from serverless function
-            fetch('/api/getComments')
+            fetch('/pages/getComments')
                 .then(response => response.json())
                 .then(comments => {
                     comments.forEach(comment => {
@@ -46,7 +46,7 @@
 
             if (comment !== '') {
                 // Send comment to serverless function
-                fetch('/api/saveComment', {
+                fetch('/pages/saveComment', {
                     method: 'POST',
                     body: JSON.stringify({ comment }),
                     headers: {
