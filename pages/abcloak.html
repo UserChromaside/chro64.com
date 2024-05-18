@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <title>AB Cloaker</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+    <center>
+        <table width="600">
+            <tr>
+                <td>
+                    <font face="Verdana" size="3">
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+                        
+
+<style>
+    body {
+ background-image: url("background.png");
+ background-color: #FFFFFF;
+}
+</style>
+      
+<title>About:Blank Cloaker</title>
+<link rel="stylesheet" href="style.css">
+<center>
+<h1 class="h1a">about:blank loader</h1>
+<h1 class="h1d">(Add https://) before the URL</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="https://cdn.jsdelivr.net/gh/FogNetwork/ABC/index.js"></script>
+  <script>
+    function validURL(str) {
+  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+  return !!pattern.test(str);
+}
+    function go() {
+      var page = new ABC({
+        "type": "blank",
+        "url": validURL(document.querySelector('input').value) ? document.querySelector('input').value : window.location.origin
+      })
+      page.open()
+    }
+  </script>
+
+<div class="inputContainer">
+  <input type="url" onkeydown="if(event.key==='Enter') go()" size="25" class="inputText" autofocus>
+<button onclick="go()" class="inputGo">Go</button>
+</div>
+
+
+<body>
+
+</body>
+</html>
+  </center>
+
+                
