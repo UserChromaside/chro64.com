@@ -35,24 +35,30 @@
 
         #projects h2 {
             color: #24D6F6;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .project-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .project-list li {
             margin-bottom: 15px;
+            background-color: #24D6F6;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .project-list li a {
             text-decoration: none;
-            color: #000000;
+            color: #FFFFFF; /* Font color for links */
         }
 
         .project-list li a:hover {
-            color: #24D6F6;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -69,15 +75,15 @@
         </table>
         <hr color="#24D6F6">
         <a href="/pages/2024/about.html">About this site - 05/16/2024</a>
-        <style>a { color: white; }</style>
-     
+        
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <ul class="project-list">
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-                
+                <li><a href="#"><span class="project-name">Project 1</span></a></li>
+                <li><a href="#"><span class="project-name">Project 2</span></a></li>
+                <li><a href="#"><span class="project-name">Project 3</span></a></li>
+                <!-- Add more projects as needed -->
             </ul>
         </section>
     </div>
