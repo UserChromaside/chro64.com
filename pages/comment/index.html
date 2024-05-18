@@ -6,70 +6,12 @@
     <title>Comment Section</title>
 </head>
 <body>
-    <h1>Comments</h1>
-    
-    <!-- Form to submit comments -->
-    <form id="commentForm">
-        <label for="comment">Leave a comment:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
+    <h1>Comment Section</h1>
+    <div id="comments"></div>
+    <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+    <button onclick="submitComment()">Submit Comment</button>
 
-    <hr>
-
-    <!-- Display comments -->
-    <div id="commentsContainer"></div>
-
-    <script>
-        // Function to load comments from serverless function
-        function loadComments() {
-            const commentsContainer = document.getElementById('commentsContainer');
-            commentsContainer.innerHTML = '';
-
-            // Fetch comments from serverless function
-            fetch('/pages/comment/getComments')
-                .then(response => response.json())
-                .then(comments => {
-                    comments.forEach(comment => {
-                        const commentElement = document.createElement('div');
-                        commentElement.textContent = comment;
-                        commentsContainer.appendChild(commentElement);
-                    });
-                });
-        }
-
-        // Function to handle form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            const commentInput = document.getElementById('comment');
-            const comment = commentInput.value.trim();
-
-            if (comment !== '') {
-                // Send comment to serverless function
-                fetch('/pages/comment/saveComment', {
-                    method: 'POST',
-                    body: JSON.stringify({ comment }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        // Refresh comments display
-                        loadComments();
-
-                        // Clear comment input
-                        commentInput.value = '';
-                    }
-                });
-            }
-        }
-
-        // Load comments when the page loads
-        document.addEventListener('DOMContentLoaded', loadComments);
-
-        // Add event listener to the form
-        document.getElementById('commentForm').addEventListener('submit', handleSubmit);
-    </script>
+    <script src="comments.js"></script>
+    <script src="maxsize.js"></script>
 </body>
 </html>
