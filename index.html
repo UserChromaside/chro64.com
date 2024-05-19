@@ -3,6 +3,7 @@
 <head>
 <title>chro64</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 <style>
 body {
   background-image: url('https://chro64.com/background.png');
@@ -44,7 +45,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: #111;
@@ -93,19 +94,21 @@ body {
 
 <div class="content">
   <center>
-    <h1>chro64</h1>
+    <h1>Welcome to our website!</h1>
   </center>
 </div>
 
-<span class="hamburger" onclick="openNav()">&#9776;</span>
+<span class="hamburger" id="hamburger" onclick="openNav()">&#9776;</span>
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("hamburger").style.visibility = "hidden";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("hamburger").style.visibility = "visible";
 }
 </script>
 
