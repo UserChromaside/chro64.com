@@ -2,99 +2,60 @@
 <html>
 <head>
 <title>chro64</title>
-  <style>
-body {
-    background-image: url('https://chro64.com/background.png');
-      background-repeat: repeat-y;
-    animation: scrollBackground 20s linear infinite;
-  }
-
-  @keyframes scrollBackground {
-    from { background-position: 0 0; }
-    to { background-position: 0 100%; }
-  }
-
-  .hamburger {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-  }
-
-  .line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px auto;
-    transition: background-color 0.3s ease;
-  }
-
-  .navbar {
-    display: none;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    overflow-y: auto;
-  }
-}
-  
-    </style>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: "Verdana";
+  background-image: url('https://chro64.com/background.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  animation: scrollBackground 20s linear infinite;
+  margin: 0;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
+@keyframes scrollBackground {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
   position: fixed;
-  z-index: 1;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  color: white;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: none;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.content {
+  margin-top: 60px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -105,10 +66,14 @@ body {
   <a href="pages/projects.html">Projects</a>
   <a href="pages/contact.html">Contact</a>
 </div>
-<center>
-<h1>chro64</h1>
- </center>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<div class="content">
+  <center>
+    <h1>chro64</h1>
+  </center>
+</div>
+
+<span class="hamburger" onclick="openNav()">&#9776;</span>
 
 <script>
 function openNav() {
@@ -119,6 +84,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-   
+
 </body>
 </html>
