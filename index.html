@@ -2,6 +2,54 @@
 <html>
 <head>
 <title>chro64</title>
+  <style>
+body {
+    background-image: url('https://chro64.com/background.png');
+      background-repeat: repeat-y; /* Repeat the background vertically */
+    animation: scrollBackground 20s linear infinite; /* Animation to scroll the background */
+  }
+
+  @keyframes scrollBackground {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+  
+    </style>
+
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,10 +102,10 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclicTk="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/news.html">News</a>
+  <a href="pages/projects.html">Projects</a>
+  <a href="pages/contact,html">Contact</a>
 </div>
 <center>
 <h1>chro64</h1>
